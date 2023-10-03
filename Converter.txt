@@ -1,0 +1,16 @@
+import java.util.*;
+class converter{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter number at any base");
+        String a=sc.next();
+        int l=a.length();
+        int s=0;
+        for(int x=0;x<l;x++){
+            if(Character.isAlphabet(a.charAt(x))){
+                s=(a.charAt(x)-64)*10+s;
+            }
+
+        }
+    }
+}
